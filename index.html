@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hotel en la Quebrada de Humahuaca" />
+    <title>Hotel Quebrada de Humahuaca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hotel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#welcome">Bienvenida</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Habitaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="welcome" class="welcome-section">
+      <picture>
+        <source
+          srcset="images/hotel-background-mobile.png"
+          media="(max-width: 768px)"
+        />
+        <source
+          srcset="images/hotel-background-desktop.png"
+          media="(min-width: 769px)"
+        />
+        <img
+          src="images/hotel-background-desktop.png"
+          alt="Hotel Quebrada de Humahuaca"
+        />
+      </picture>
+      <div class="overlay"></div>
+      <div class="welcome-content">
+        <h1>Bienvenidos al Hotel Quebrada de Humahuaca</h1>
+        <p>Disfruta de una estadía inolvidable en el corazón de la Quebrada</p>
+      </div>
+    </section>
+    <section id="rooms" class="rooms-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Nuestras Habitaciones</h2>
+            <p>Elige la habitación perfecta para tu estancia</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="room">
+              <picture>
+                <source
+                  srcset="images/room1-large.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/room1-medium.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/room1-small.png"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/room1-large.png" alt="Habitación Estándar" />
+              </picture>
+              <div class="room-info">
+                <h3>Habitación Estándar</h3>
+                <p>
+                  Una habitación cómoda y acogedora con todas las comodidades
+                  básicas.
+                </p>
+                <p class="price">Desde $80/noche</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="room">
+              <picture>
+                <source
+                  srcset="images/room2-large.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/room2-medium.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/room2-small.png"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/room2-large.png" alt="Habitación Estándar" />
+              </picture>
+              <div class="room-info">
+                <h3>Habitación Deluxe</h3>
+                <p>
+                  Una habitación más espaciosa con vistas panorámicas y
+                  servicios adicionales.
+                </p>
+                <p class="price">Desde $120/noche</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="room">
+              <picture>
+                <source
+                  srcset="images/room3-large.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/room3-medium.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/room3-small.png"
+                  media="(max-width: 767px)"
+                />
+                <img src="images/room1-large.png" alt="Habitación Estándar" />
+              </picture>
+              <div class="room-info">
+                <h3>Suite</h3>
+                <p>
+                  La máxima experiencia en lujo y confort, ideal para una
+                  estancia especial.
+                </p>
+                <p class="price">Desde $200/noche</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Servicios</h2>
+            <p>
+              Descubre los servicios que ofrecemos para hacer tu estancia más
+              cómoda.
+            </p>
+          </div>
+        </div>
+        <div
+          id="servicesCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="3000"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#servicesCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#servicesCarousel" data-slide-to="1"></li>
+            <li data-target="#servicesCarousel" data-slide-to="2"></li>
+            <li data-target="#servicesCarousel" data-slide-to="3"></li>
+            <li data-target="#servicesCarousel" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source
+                  srcset="images/parking-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/parking-tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/parking-mobile.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/parking-desktop.png"
+                  class="d-block w-100"
+                  alt="Estacionamiento"
+                />
+              </picture>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Estacionamiento</h5>
+                <p>Disfruta de nuestro amplio estacionamiento seguro.</p>
+              </div>
+              <div class="carousel-caption d-md-none mobile-caption">
+                <p>Estacionamiento seguro</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="images/breakfast-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/breakfast-tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/breakfast-mobile.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/breakfast-desktop.png"
+                  class="d-block w-100"
+                  alt="Desayuno"
+                />
+              </picture>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desayuno</h5>
+                <p>Empieza tu día con un delicioso desayuno buffet.</p>
+              </div>
+              <div class="carousel-caption d-md-none mobile-caption">
+                <p>Desayuno buffet</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="images/piscina-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/piscina-tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/piscina-mobile.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/piscina-desktop.png"
+                  class="d-block w-100"
+                  alt="Piscina con solarium"
+                />
+              </picture>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Piscina con solarium</h5>
+                <p>Un rincón de bienestar para nuestros huéspedes.</p>
+              </div>
+              <div class="carousel-caption d-md-none mobile-caption">
+                <p>Piscina con solarium</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="images/reception-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/reception-tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/reception-mobile.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/reception-desktop.png"
+                  class="d-block w-100"
+                  alt="Recepción 24h"
+                />
+              </picture>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Recepción 24h</h5>
+                <p>
+                  Nuestra recepción está disponible las 24 horas para tu
+                  comodidad.
+                </p>
+              </div>
+              <div class="carousel-caption d-md-none mobile-caption">
+                <p>Recepción 24h</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="images/tourism-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images/tourism-tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images/tourism-mobile.png"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/tourism-desktop.png"
+                  class="d-block w-100"
+                  alt="Asesoramiento Turístico"
+                />
+              </picture>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Asesoramiento Turístico</h5>
+                <p>
+                  Te ayudamos a planificar tus actividades turísticas desde el
+                  primer momento.
+                </p>
+              </div>
+              <div class="carousel-caption d-md-none mobile-caption">
+                <p>Asesoramiento turístico</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#servicesCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#servicesCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Galería</h2>
+            <p>Explora nuestras instalaciones a través de estas imágenes.</p>
+          </div>
+        </div>
+        <div class="row d-none d-md-flex d-lg-none">
+          <div class="col-6 gallery-item">
+            <img src="images/gallery1-desktop.png" alt="Galería Imagen 1" />
+          </div>
+          <div class="col-6 gallery-item">
+            <img src="images/gallery2-desktop.png" alt="Galería Imagen 2" />
+          </div>
+          <div class="col-6 gallery-item">
+            <img src="images/gallery3-desktop.png" alt="Galería Imagen 3" />
+          </div>
+          <div class="col-6 gallery-item">
+            <img src="images/gallery4-desktop.png" alt="Galería Imagen 4" />
+          </div>
+          <div class="col-6 gallery-item">
+            <img src="images/gallery5-desktop.png" alt="Galería Imagen 5" />
+          </div>
+          <div class="col-6 gallery-item">
+            <img src="images/gallery6-desktop.png" alt="Galería Imagen 6" />
+          </div>
+        </div>
+        <div class="row d-none d-lg-flex">
+          <div class="col-md-4 gallery-item">
+            <img src="images/gallery1-tablet.png" alt="Galería Imagen 1" />
+          </div>
+          <div class="col-md-4 gallery-item">
+            <img src="images/gallery2-tablet.png" alt="Galería Imagen 2" />
+          </div>
+          <div class="col-md-4 gallery-item">
+            <img src="images/gallery3-tablet.png" alt="Galería Imagen 3" />
+          </div>
+          <div class="col-md-4 gallery-item">
+            <img src="images/gallery4-tablet.png" alt="Galería Imagen 4" />
+          </div>
+          <div class="col-md-4 gallery-item">
+            <img src="images/gallery5-tablet.png" alt="Galería Imagen 5" />
+          </div>
+          <div class="col-md-4 gallery-item">
+            <img src="images/gallery6-tablet.png" alt="Galería Imagen 6" />
+          </div>
+        </div>
+        <div
+          id="galleryCarousel"
+          class="carousel slide d-md-none"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/gallery1-mobile.png"
+                class="d-block w-100 gallery-item"
+                alt="Galería Imagen 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/gallery2-mobile.png"
+                class="d-block w-100 gallery-item"
+                alt="Galería Imagen 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/gallery3-mobile.png"
+                class="d-block w-100 gallery-item"
+                alt="Galería Imagen 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/gallery4-mobile.png"
+                class="d-block w-100 gallery-item"
+                alt="Galería Imagen 4"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/gallery5-mobile.png"
+                class="d-block w-100 gallery-item"
+                alt="Galería Imagen 5"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/gallery6-mobile.png"
+                class="d-block w-100 gallery-item"
+                alt="Galería Imagen 6"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#galleryCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#galleryCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox" style="display: none">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+        <a class="prev" id="prev">&#10094;</a>
+        <a class="next" id="next">&#10095;</a>
+      </div>
+    </section>
+
+    <section id="location" class="container">
+      <!-- Contenido de ubicación -->
+    </section>
+    <section id="contact" class="container">
+      <!-- Contenido de contacto -->
+    </section>
+    <button id="whatsapp-button">
+      <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+    </button>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
