@@ -5,7 +5,49 @@ body {
 }
 
 header {
-  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+header.scrolled {
+  background-color: rgba(204, 196, 179, 0.8);
+}
+
+/* Ajustes adicionales para asegurar que el header esté siempre arriba */
+body {
+  padding-top: 60px; /* Espaciado superior para compensar el espacio del header fijo */
+}
+
+.navbar {
+  padding: 0; /* Quitar el padding por defecto */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  height: 100px; /* Ajusta la altura del logo según sea necesario */
+}
+
+.navbar-nav .nav-link {
+  color: #bfb8a7;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #aca48c;
+}
+
+.navbar-toggler {
+  border: none; /* Quitar el borde del botón de toggle */
 }
 
 .welcome-section {
@@ -52,10 +94,12 @@ header {
 .welcome-content h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  color: #ede6dc;
 }
 
 .welcome-content p {
   font-size: 1.5em;
+  color: #ede6dc;
 }
 
 #whatsapp-button {
@@ -72,9 +116,11 @@ header {
   width: 50px;
   height: 50px;
 }
+/*rooms*/
 
 .rooms-section {
-  padding: 10px 0;
+  background-color: #ede6dc;
+  padding: 60px 0;
 }
 
 .rooms-section .container {
@@ -85,15 +131,18 @@ header {
 .rooms-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #665b3e;
 }
 
 .rooms-section p {
   font-size: 1.2em;
+  color: #665b3e;
 }
 
 .room {
+  background-color: #ccccb4; /* Color de fondo blanco para las habitaciones */
   margin-bottom: 30px;
-  border: 1px solid #ddd;
+  border: 1px solid #bfb8a7;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -112,21 +161,22 @@ header {
 .room-info h3 {
   font-size: 1.8em;
   margin-bottom: 10px;
+  color: #665b3e;
 }
 
 .room-info p {
   font-size: 1em;
-  color: #555;
+  color: #665b3e;
 }
 
 .room-info .price {
   font-size: 1.5em;
-  color: #333;
   margin-top: 10px;
+  color: #665b3e;
 }
 .services-section {
   padding: 60px 0;
-  background-color: #f8f9fa;
+  background-color: #d3ccbc;
 }
 
 .services-section .container {
@@ -174,11 +224,11 @@ header {
 
 /* Indicadores del carrusel */
 .carousel-indicators li {
-  background-color: #000;
+  background-color: #bfb8a7;
 }
 
 .carousel-indicators .active {
-  background-color: #fff;
+  background-color: #aca48c;
 }
 
 /* Leyenda para móviles */
@@ -221,7 +271,7 @@ header {
 /* Galería */
 .gallery-section {
   padding: 60px 0;
-  background-color: #f8f9fa;
+  background-color: #ccc4b3;
 }
 
 .gallery-section h2 {
@@ -268,7 +318,7 @@ header {
 .carousel-control-prev::before,
 .carousel-control-next::before {
   font-size: 2em;
-  color: rgba(0, 0, 0, 0.5);
+  color: #bfb8a7; /* Color de las flechas del carrusel */
 }
 
 /* Media queries para diferentes tamaños de pantalla */
@@ -396,4 +446,278 @@ header {
   .next {
     display: none; /* Ocultar las flechas en móviles */
   }
+}
+/* Ubicación */
+.location-section {
+  padding: 60px 0;
+  background-color: #ccc4b3;
+}
+
+.location-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.location-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.location-map,
+.location-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.location-description {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-description h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Móviles */
+@media (max-width: 767px) {
+  .location-map,
+  .location-description {
+    flex: 0 0 100%;
+  }
+
+  .location-map iframe {
+    height: 300px;
+  }
+
+  .location-description {
+    margin-top: 20px;
+  }
+}
+
+/* Tabletas */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .location-map,
+  .location-description {
+    flex: 0 0 50%;
+  }
+
+  .location-map iframe {
+    height: 400px;
+  }
+
+  .location-description {
+    margin-top: 20px;
+  }
+}
+
+/* Escritorios */
+@media (min-width: 1200px) {
+  .location-map,
+  .location-description {
+    flex: 0 0 50%;
+  }
+
+  .location-map iframe {
+    height: 500px;
+  }
+
+  .location-description {
+    margin-top: 0;
+  }
+}
+/* Gancho Persuasivo */
+.cta-section {
+  padding: 48px 0; /* Reduce el padding en un 20% */
+  background-color: #b4ac97;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: "Pacifico", cursive; /* Tipografía diferente */
+}
+
+/* Footer */
+.footer-section {
+  padding: 32px 0; /* Reduce el padding en un 20% */
+  background-color: #aca48c;
+  color: #fff;
+}
+
+.footer-section .logo-footer {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  margin: 0 0 10px 0; /* Espaciado inferior para cada línea de contacto */
+}
+
+.footer-section .social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-section .copyright {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #ede6dc;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Móviles */
+@media (max-width: 767px) {
+  .location-map,
+  .location-description {
+    flex: 0 0 100%;
+  }
+
+  .location-map iframe {
+    height: 300px;
+  }
+
+  .location-description {
+    margin-top: 20px;
+  }
+
+  .cta-section {
+    padding: 38.4px 0; /* Reduce el padding en un 20% */
+  }
+
+  .footer-section {
+    padding: 25.6px 0; /* Reduce el padding en un 20% */
+  }
+
+  .footer-section .logo-footer,
+  .footer-section .contact-info,
+  .footer-section .social-icons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-section .contact-info,
+  .footer-section .social-icons {
+    margin-bottom: 20px;
+  }
+
+  .footer-section .social-icons {
+    text-align: center;
+  }
+}
+
+/* Tabletas */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .location-map,
+  .location-description {
+    flex: 0 0 50%;
+  }
+
+  .location-map iframe {
+    height: 400px;
+  }
+
+  .location-description {
+    margin-top: 20px;
+  }
+
+  .cta-section {
+    padding: 38.4px 0; /* Reduce el padding en un 20% */
+  }
+
+  .footer-section {
+    padding: 25.6px 0; /* Reduce el padding en un 20% */
+  }
+
+  .footer-section .logo-footer,
+  .footer-section .contact-info,
+  .footer-section .social-icons {
+    text-align: center;
+  }
+
+  .footer-section .contact-info,
+  .footer-section .social-icons {
+    margin-top: 20px;
+  }
+}
+
+/* Escritorios */
+@media (min-width: 1200px) {
+  .location-map,
+  .location-description {
+    flex: 0 0 50%;
+  }
+
+  .location-map iframe {
+    height: 500px;
+  }
+
+  .location-description {
+    margin-top: 0;
+  }
+
+  .cta-section {
+    padding: 38.4px 0; /* Reduce el padding en un 20% */
+  }
+
+  .footer-section {
+    padding: 25.6px 0; /* Reduce el padding en un 20% */
+  }
+
+  .footer-section .social-icons {
+    text-align: right;
+  }
+}
+/* Botón de WhatsApp */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  padding: 22.5px; /* Aumenta el padding en un 50% */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-size: 39.6px; /* Aumenta el tamaño del ícono en un 10% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none; /* Elimina la subrayado */
+}
+
+.whatsapp-button:hover {
+  background-color: #20b358;
+  transform: scale(
+    1.1
+  ); /* Oscurece el color y aumenta el tamaño al pasar el mouse */
+  text-decoration: none; /* Elimina la subrayado */
 }

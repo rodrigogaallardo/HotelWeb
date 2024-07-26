@@ -1,5 +1,10 @@
-document.getElementById('whatsapp-button').addEventListener('click', function() {
-    window.open('https://wa.me/1234567890', '_blank');
+document.addEventListener('DOMContentLoaded', function() {
+  const whatsappButton = document.querySelector('.whatsapp-button');
+  const phoneNumber = '+5493885926044';
+  const message = encodeURIComponent('Hola "Hotel" , me gustaría pedirle más informacion');
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+  
+  whatsappButton.setAttribute('href', whatsappLink);
 });
 document.addEventListener('DOMContentLoaded', () => {
   const lightbox = document.getElementById('lightbox');
@@ -63,5 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
       currentImgIndex = (currentImgIndex < images.length - 1) ? currentImgIndex + 1 : 0;
       lightboxImg.src = images[currentImgIndex].src;
     }
+  }
+});
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('header');
+  if (window.scrollY > 50) { // Cambia 50 por el valor que consideres adecuado
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
   }
 });

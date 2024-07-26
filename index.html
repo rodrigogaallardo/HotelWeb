@@ -15,12 +15,18 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Hotel</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="images/Hotel Ejemplo-.png" alt="Hotel Logo" class="logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -494,15 +500,92 @@
       </div>
     </section>
 
-    <section id="location" class="container">
-      <!-- Contenido de ubicación -->
+    <section id="location" class="location-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Ubicación</h2>
+            <p>Encuentra nuestro hotel en el corazón de la ciudad.</p>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 d-flex location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3923175866883!2d-122.42067958468135!3d37.77492977975944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581504f70e9c1%3A0x2c0d024b16d1df76!2sSan%20Francisco%2C%20CA%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1627569074214!5m2!1ses!2sar"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="col-md-6 d-flex location-description">
+            <div>
+              <h3>Ventajas de Nuestra Ubicación</h3>
+              <p>
+                Descubre la comodidad de hospedarte en nuestro hotel, ubicado en
+                una zona estratégica que te permitirá disfrutar de todo lo que
+                la ciudad tiene para ofrecer. Estamos a pocos minutos de los
+                principales puntos turísticos, con acceso directo al transporte
+                público. Rodéate de restaurantes y bares de alta calidad,
+                centros comerciales y tiendas exclusivas. Todo esto en un
+                entorno seguro y tranquilo, ideal para tu comodidad. Nuestra
+                ubicación privilegiada te garantiza una experiencia inigualable,
+                combinando conveniencia y cercanía a las atracciones más
+                destacadas de la ciudad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="contact" class="container">
-      <!-- Contenido de contacto -->
+    <!-- Gancho Persuasivo -->
+    <section id="cta" class="cta-section">
+      <div class="container text-center">
+        <h2>Reserva Ahora y Disfruta de una Estadía Inolvidable</h2>
+      </div>
     </section>
-    <button id="whatsapp-button">
-      <img src="images/whatsapp-icon.png" alt="WhatsApp" />
-    </button>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 text-center text-lg-left">
+            <img
+              src="images/Hotel Ejemplo_transparent-.png"
+              alt="Logo"
+              class="logo-footer"
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 text-center text-lg-left contact-info">
+            <h3>Contáctanos</h3>
+            <p>Tel: +54 9 1234 5678</p>
+            <p>Email: contacto@hotel.com</p>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center text-lg-right social-icons">
+            <h3>Síguenos</h3>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contacto@hotel.com" class="social-icon"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              Copyright © 2024 | Hotel Ejemplo | Todos los derechos reservados
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="https://wa.me/3885926044" class="whatsapp-button" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
