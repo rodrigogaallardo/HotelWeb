@@ -4,50 +4,50 @@ body {
   padding: 0;
 }
 
-header {
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  padding: 10px 0;
-  transition: background-color 0.3s, backdrop-filter 0.3s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-}
-
-header.scrolled {
-  background-color: rgba(204, 196, 179, 0.8);
-}
-
-/* Ajustes adicionales para asegurar que el header esté siempre arriba */
-body {
-  padding-top: 60px; /* Espaciado superior para compensar el espacio del header fijo */
-}
-
 .navbar {
-  padding: 0; /* Quitar el padding por defecto */
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color:#aca48c ;
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-brand .logo {
-  height: 100px; /* Ajusta la altura del logo según sea necesario */
+  max-height: 100px;
+  width: auto;
 }
 
-.navbar-nav .nav-link {
-  color: #bfb8a7;
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.navbar-nav .nav-item {
+  margin-left: 15px;
+}
 .navbar-nav .nav-link:hover {
   color: #aca48c;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #e8e3d8;
+}
+
 .navbar-toggler {
-  border: none; /* Quitar el borde del botón de toggle */
+  border: none;
+}
+@media (max-width: 768px) {
+  .navbar-brand .logo {
+    max-height: 50px;
+    width: auto;
+  }
 }
 
 .welcome-section {
@@ -82,7 +82,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -101,11 +101,10 @@ body {
   font-size: 1.5em;
   color: #ede6dc;
 }
-/*Queries de imagenes escritorio*/
-/* Media queries para ajustar la imagen en diferentes dispositivos */
+
 @media (max-width: 768px) {
   .welcome-img {
-    height: auto; /* Ajuste automático para mobile */
+    height: auto;
     object-fit: cover;
     object-position: center;
   }
@@ -113,7 +112,7 @@ body {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .welcome-img {
-    height: auto; /* Ajuste automático para tablet */
+    height: auto;
     object-fit: cover;
     object-position: center;
   }
@@ -121,7 +120,7 @@ body {
 
 @media (min-width: 1025px) {
   .welcome-img {
-    height: auto; /* Ajuste automático para desktop */
+    height: auto;
     object-fit: cover;
     object-position: center;
   }
@@ -751,7 +750,7 @@ body {
   background-color: #25d366;
   color: #fff;
   border-radius: 50%;
-  padding: 22.5px; /* Aumenta el padding en un 50% */
+  padding: 12.5px; /* Aumenta el padding en un 50% */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   font-size: 39.6px; /* Aumenta el tamaño del ícono en un 10% */
   display: flex;
@@ -768,4 +767,55 @@ body {
     1.1
   ); /* Oscurece el color y aumenta el tamaño al pasar el mouse */
   text-decoration: none; /* Elimina la subrayado */
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    padding: 7.5px; /* Aumenta el padding en un 50% */
+  }
+}
+
+/* Botón de flecha */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior según sea necesario */
+  left: 20px; /* Ajusta la distancia desde el borde izquierdo según sea necesario */
+  width: 60px;
+  height: 60px;
+  background-color: transparent; /* Fondo transparente */
+  border: none;
+  border-radius: 50%; /* Círculo perfecto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1040;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+}
+
+#scrollToTop i {
+  font-size: 1.3em; /* Tamaño de la flecha aumentado en un 30% */
+  color: #bfb8a6; /* Color de la flecha */
+}
+
+#scrollToTop:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo sutil al pasar el mouse */
+}
+
+#scrollToTop.show {
+  opacity: 1; /* Muestra el botón cuando la clase show está presente */
+}
+
+/* Media Queries para el tamaño del botón */
+@media (max-width: 768px) {
+  #scrollToTop {
+    width: 40px;
+    height: 40px;
+  }
+
+  #scrollToTop i {
+    font-size: 1.1em;
+  }
 }

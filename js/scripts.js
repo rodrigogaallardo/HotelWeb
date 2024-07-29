@@ -71,10 +71,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 window.addEventListener('scroll', function() {
-  const header = document.querySelector('header');
+  const header = document.querySelector('nav');
   if (window.scrollY > 50) { // Cambia 50 por el valor que consideres adecuado
     header.classList.add('scrolled');
   } else {
     header.classList.remove('scrolled');
   }
+});
+
+/*script de flecha*/
+// Mostrar el botón cuando se hace scroll hacia abajo
+window.addEventListener('scroll', function() {
+  const scrollToTopButton = document.getElementById('scrollToTop');
+  if (window.scrollY > 300) { // Muestra el botón cuando el scroll es mayor a 300px
+    scrollToTopButton.classList.add('show');
+  } else {
+    scrollToTopButton.classList.remove('show');
+  }
+});
+
+// Acción del botón para volver al inicio
+document.getElementById('scrollToTop').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
