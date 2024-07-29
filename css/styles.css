@@ -101,7 +101,32 @@ body {
   font-size: 1.5em;
   color: #ede6dc;
 }
+/*Queries de imagenes escritorio*/
+/* Media queries para ajustar la imagen en diferentes dispositivos */
+@media (max-width: 768px) {
+  .welcome-img {
+    height: auto; /* Ajuste automático para mobile */
+    object-fit: cover;
+    object-position: center;
+  }
+}
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .welcome-img {
+    height: auto; /* Ajuste automático para tablet */
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .welcome-img {
+    height: auto; /* Ajuste automático para desktop */
+    object-fit: cover;
+    object-position: center;
+  }
+}
+/*------------------------------------------------*/
 #whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -116,6 +141,7 @@ body {
   width: 50px;
   height: 50px;
 }
+/*------------------------------------------------*/
 /*rooms*/
 
 .rooms-section {
@@ -148,7 +174,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.room img {
+.room-img {
   width: 100%;
   height: auto;
 }
@@ -174,6 +200,28 @@ body {
   margin-top: 10px;
   color: #665b3e;
 }
+
+/* Media Queries para ajustar las imágenes según el dispositivo */
+@media (max-width: 768px) {
+  .room-img {
+    height: 200px; /* Ajuste de altura para móviles */
+    object-fit: cover; /* Ajuste de contenido dentro del contenedor */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .room-img {
+    height: 300px; /* Ajuste de altura para tabletas */
+    object-fit: cover; /* Ajuste de contenido dentro del contenedor */
+  }
+}
+
+@media (min-width: 1025px) {
+  .room-img {
+    height: auto; /* Mantener altura original para escritorios */
+  }
+}
+/*service*/
 .services-section {
   padding: 60px 0;
   background-color: #d3ccbc;
