@@ -12,16 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.querySelector('.close');
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
-  const galleryItems = document.querySelectorAll('.gallery-item img, .carousel-inner .carousel-item img');
+
+  // Selecciona solo las imágenes cuyo src comienza con 'images/gallery'
+  const galleryItems = document.querySelectorAll('[src^="images/gallery"]');
+  
   let currentImgIndex = -1;  // Inicialmente no hay imagen seleccionada
 
-  // Definimos el array de imágenes basado en el tamaño de la pantalla
+  // Definimos el array de imágenes con sufijo -tablet
   const images = Array.from(galleryItems).map(img => ({
-    src: img.src.replace(/desktop|tablet|mobile/, match => {
-        if (window.innerWidth >= 1200) return 'desktop';
-        if (window.innerWidth >= 768) return 'tablet';
-        return 'mobile';
-    })
+    src: img.src // Ya tiene sufijo -tablet, así que no es necesario reemplazar nada
   }));
 
   // Añadimos evento de click a cada imagen de la galería
@@ -97,3 +96,22 @@ document.getElementById('scrollToTop').addEventListener('click', function() {
     behavior: 'smooth'
   });
 });
+/*Modificar texto para diferentes pantallas*/
+window.addEventListener('resize', adjustFontSize);
+document.addEventListener('DOMContentLoaded', adjustFontSize);
+
+function adjustFontSize() {
+  const description = document.querySelector('.location-description p');
+  const heading = document.querySelector('.location-description h3');
+
+  if (window.innerWidth < 768) {
+    description.style.fontSize = '1em'; // Tamaño para pantallas pequeñas
+    heading.style.fontSize = '1.4em'; // Tamaño para pantallas pequeñas
+  } else if (window.innerWidth < 992) {
+    description.style.fontSize = '1.1em'; // Tamaño para pantallas medianas
+    heading.style.fontSize = '1.6em'; // Tamaño para pantallas medianas
+  } else {
+    description.style.fontSize = '1.2em'; // Tamaño para pantallas grandes
+    heading.style.fontSize = '1.8em'; // Tamaño para pantallas grandes
+  }
+}
