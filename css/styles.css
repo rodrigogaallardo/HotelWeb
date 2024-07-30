@@ -45,7 +45,7 @@ body {
 }
 @media (max-width: 768px) {
   .navbar-brand .logo {
-    max-height: 0px;
+    max-height: 50px;
     width: auto;
   }
 }
