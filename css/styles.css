@@ -2,15 +2,16 @@ body {
   font-family: "Lora", serif;
   margin: 0;
   padding: 0;
+  background-color: #ede6dc;
 }
-
+/*NAVBAR Y LOGO*/
 .navbar {
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color:#aca48c ;
+  background-color: #aca48c;
 }
 
 .navbar-brand {
@@ -49,7 +50,62 @@ body {
     width: auto;
   }
 }
+/* Estilo de la tarjeta de la sección "Quiénes Somos" */
+.about-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 15px; /* Ajusta este valor para modificar la distancia con la sección de bienvenida */
+  background-color: #ede6dc;
+}
 
+.about-section .card {
+  background-color: #aca48c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 800px; /* Ajusta este valor para modificar el ancho máximo de la tarjeta */
+  position: relative;
+  top: 0px; /* Ajusta este valor para posicionar la tarjeta */
+}
+
+.about-section .card h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-section .card p {
+  font-size: 1.2em;
+}
+
+.about-section .card img {
+  width: 80%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .about-section .card h2 {
+    font-size: 2em;
+  }
+
+  .about-section .card p {
+    font-size: 1em;
+  }
+
+  .about-section {
+    margin-top: 0;
+  }
+
+  .about-section .card {
+    top: 50px;
+  }
+  .about-section .card img {
+    width: 70%;
+  }
+}
+/*Bienvenida*/
 .welcome-section {
   position: relative;
   height: 100vh;
@@ -199,7 +255,6 @@ body {
   margin-top: 10px;
   color: #665b3e;
 }
-
 
 /*service*/
 .services-section {
@@ -478,7 +533,7 @@ body {
 /* Ubicación */
 .location-section {
   padding: 10px 0 20px 0;
-  background-color: #d2ccbc ;
+  background-color: #d2ccbc;
 }
 
 .location-section h2 {
@@ -507,16 +562,15 @@ body {
 
 .location-description {
   padding: 20px;
-  background-color: #eae4d9 ;
+  background-color: #eae4d9;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align:center;
+  text-align: center;
 }
 
 .location-description h3 {
   font-size: 1.8em;
   margin-bottom: 20px;
-  
 }
 
 /* Media queries para diferentes tamaños de pantalla */
