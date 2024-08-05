@@ -62,7 +62,7 @@ body {
 
 .about-section .card {
   background-color: #aca48c;
-  color: #fff;
+  color: #434c06;
   border: none;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -214,12 +214,12 @@ body {
 .rooms-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #665b3e;
+  color: #651c0b;
 }
 
 .rooms-section p {
   font-size: 1.2em;
-  color: #665b3e;
+  color: #651c0b;
 }
 
 .room {
@@ -244,18 +244,12 @@ body {
 .room-info h3 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  color: #665b3e;
+  color: #651c0b;
 }
 
 .room-info p {
   font-size: 1em;
-  color: #665b3e;
-}
-
-.room-info .price {
-  font-size: 1.5em;
-  margin-top: 10px;
-  color: #665b3e;
+  color: #651c0b;
 }
 
 /*service*/
@@ -272,6 +266,10 @@ body {
 .services-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #6e1e0c;
+}
+.services-description {
+  color: #6e1e0c;
 }
 
 .services-section p {
@@ -362,11 +360,13 @@ body {
 .gallery-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #6b1400;
 }
 
 .gallery-section p {
   font-size: 1.2em;
   margin-bottom: 40px;
+  color: #6b1400;
 }
 
 .gallery-item {
@@ -541,11 +541,13 @@ body {
 .location-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  color: #751600;
 }
 
 .location-section p {
   font-size: 1.2em;
   margin-bottom: 40px;
+  color: #751600;
 }
 
 .location-map,
@@ -568,6 +570,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  color: #751600;
 }
 
 .location-description h3 {
@@ -629,7 +632,7 @@ body {
 .cta-section {
   padding: 30px 0; /* Reduce el padding en un 20% */
   background-color: #b4ac97;
-  color: #fff;
+  color: #4d0000;
   text-align: center;
 }
 
@@ -643,7 +646,7 @@ body {
 .footer-section {
   padding: 10px 0; /* Reduce el padding en un 20% */
   background-color: #aca48c;
-  color: #fff;
+  color: #380000;
 }
 
 .footer-section .logo-footer {
@@ -661,7 +664,7 @@ body {
 }
 
 .footer-section .social-icons a {
-  color: #fff;
+  color: #380000;
   font-size: 1.5em;
   margin: 0 10px;
   display: inline-block;
@@ -675,7 +678,7 @@ body {
 .footer-section .copyright {
   margin-top: 20px;
   font-size: 0.9em;
-  color: #ede6dc;
+  color: #380000;
 }
 
 /* Media queries para diferentes tamaños de pantalla */
