@@ -698,6 +698,9 @@ body {
   display: inline-block;
   transition: color 0.3s;
 }
+.footer-section .contact-info{
+  align-items: center;
+}
 
 .footer-section .social-icons a:hover {
   color: #007bff;
@@ -812,6 +815,7 @@ body {
   .footer-section .social-icons {
     text-align: right;
   }
+  
 }
 /* Botón de WhatsApp */
 .whatsapp-button {
