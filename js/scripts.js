@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const whatsappButton = document.querySelector('.whatsapp-button');
-  const phoneNumber = '+5493885926044';
+  const phoneNumber = '';
   const message = encodeURIComponent('Hola "Hotel" , me gustaría pedirle más informacion');
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
   
